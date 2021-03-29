@@ -7,6 +7,7 @@ main(List<String> args) {
     print("digite o produto da lista");
     String? produto = stdin.readLineSync();
     print('=== Adicionar Item a lista ===');
+    print('Comandos : sair e delete');
     if (produto == "DELETE") {
       print('=== Digite o numero do item que deseja remover ===');
       for (var i = 0; i < produtos.length; i++) {
@@ -14,7 +15,7 @@ main(List<String> args) {
         int remover = int.parse(stdin.readLineSync()!);
         produtos.removeAt(remover);
         print('=== Produto removido ===');
-
+      }
     }
     if (produto == "SAIR") {
       resposta = false;
