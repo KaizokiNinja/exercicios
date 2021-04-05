@@ -3,8 +3,7 @@
 # Atributos: LadoA, LadoB (ou Comprimento e Largura, ou Base e Altura, a escolher)
 # Métodos: Mudar valor dos lados, Retornar valor dos lados, calcular Área e calcular Perímetro;
 # Crie um programa que utilize esta classe. Ele deve pedir ao usuário que informe as medidas de um local. Depois, deve criar um objeto com as medidas e calcular a quantidade de pisos e de rodapés necessárias para o local.
-
-class retangulo :
+class Retangulo :
     def __init__(self):
         self.__base   = 0
         self.__altura = 1
@@ -17,3 +16,10 @@ class retangulo :
         print(f'o calculo da area do retangulo é {self.__base * self.__altura}')
     def calcPerimetro (self):
         print(f'o calculo do perimetro do retangulo é {(self.__base *2) + (self.__altura * 2)}')
+if __name__ == "__main__":
+    retangulo1 = Retangulo()
+    base      = int(input("Digite a base do retangulo   \n"  ))
+    altura    = int(input("Digite a altura do retangulo \n"))
+    retangulo1.setBaseAltura(base,altura)
+    retangulo1.calcArea()
+    retangulo1.calcPerimetro()
