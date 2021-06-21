@@ -7,4 +7,4 @@ def pessoa (**kwarg):
 
 lista = (1,2,3,4,5,6)
 titulo("Brasil",lista)
-pessoa(nome="jackson", idade="23",profissao="tecnico")
+                
