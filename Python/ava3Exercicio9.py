@@ -22,29 +22,22 @@ class Ponto :
 class Retangulo (Ponto):
     def __init__ (self,partida):
         super().__init__()
-        self._largura = 0
-        self._altura = 0
-        self._verticePartida = partida
+        self._largura = 10
+        self._altura = 20
+        self._verticePartidaX = partida
     def centroRentangulo(self):
         self._centroLargura = self._largura/2
         self._centroAltura  = self._altura/2
-        return print(f'O centro do retangulo e  no ponto X{self._centroLargura} Ponto Y{self._centroAltura}')
-class retorno :
-    def retorna(self):
-        return 6
-class teste :
-    def soma (self, segundo):
-        self.valor = segundo
-        print (f'pegou o valor de {dir(self.valor)}')
+        print(f'O centro do retangulo e  no ponto X {self._centroLargura} Ponto Y {self._centroAltura}')
+
 
 if __name__ == '__main__':
     
-    # partida = Ponto()
-    # partida.setX(10)
-    # partida.setY(5)
-    # partida.getX()
-    # partida.getY()
-    # teste = Retangulo(partida)
-    vamo = teste()
-    vapo = retorno()
-    vamo.soma(vapo.retorna)
+    partidax = Ponto()
+    partidax.setX(0)
+    partidax.setY(0)
+    partiday = Ponto()
+
+    retangulo1 = Retangulo(partida)
+    retangulo1.centroRentangulo()
+    
